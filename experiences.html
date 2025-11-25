@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>City Experiences | Harbor Suites</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page experiences-page">
+    <header class="hs-header-wrapper mt_bgtempconatainer">
+        <div class="hs_nav_flex">
+            <div class="hs_logo" aria-label="Harbor Suites">
+                <a href="index.html#home">
+                    <img src="images/Logo-light.png" alt="Harbor Suites logo">
+                </a>
+            </div>
+            <nav class="hs_nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#service">Services</a></li>
+                    <li><a href="index.html#blog">Testimonials</a></li>
+                    <li><a href="index.html#faq">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="experiences.html" aria-current="page" class="active">Experiences</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+                <div class="hs_btn_nav">
+                    <a href="booking.html#reserve" class="hs_btn">Plan a Stay</a>
+                </div>
+            </nav>
+            <button class="hs_toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <img src="images/menu_toggle.png" alt="Menu icon">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hs_page_hero hs_experience_hero" style="background-image:url('https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1800&q=80');">
+            <div class="hs_container">
+                <div class="hs_page_hero_content">
+                    <p class="hs_subheading">City intelligence from our concierge</p>
+                    <h1>Experience the harbor like an insider</h1>
+                    <p>48-hour itineraries, private tastings, rooftop wellness, and after-hours gallery access—curated by locals who live it daily.</p>
+                    <div class="hs_hero_stats">
+                        <div>
+                            <span>24</span>
+                            <p>Partner venues</p>
+                        </div>
+                        <div>
+                            <span>12</span>
+                            <p>Quarterly pop-ups</p>
+                        </div>
+                        <div>
+                            <span>4</span>
+                            <p>Neighborhoods covered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hs_experiences_filter_section">
+            <div class="hs_container">
+                <div class="hs_section_heading">
+                    <p class="hs_subheading">Browse by mood</p>
+                    <h2 class="hs_heading">Tap a filter to tailor your discoveries</h2>
+                </div>
+                <div class="experience-filters" id="experience-filters">
+                    <button data-filter="all" class="active">All</button>
+                    <button data-filter="culinary">Culinary</button>
+                    <button data-filter="wellness">Wellness</button>
+                    <button data-filter="business">Business</button>
+                    <button data-filter="culture">Culture</button>
+                </div>
+                <div class="experience-grid" id="experience-grid">
+                    <article class="experience-card" data-category="culinary">
+                        <img src="images/experience-chefstable.png" alt="Chef table">
+                        <h3>Chef’s table circuit</h3>
+                        <p>Progressive dinner across three partner kitchens with pairings and chef introductions.</p>
+                        <span>Culinary</span>
+                    </article>
+                    <article class="experience-card" data-category="wellness">
+                        <img src="images/experience-sunriseharbor.png" alt="Wellness session">
+                        <h3>Sunrise harbor reset</h3>
+                        <p>Private pier yoga, cold plunge, and adaptogenic breakfast delivered to your suite.</p>
+                        <span>Wellness</span>
+                    </article>
+                    <article class="experience-card" data-category="business">
+                        <img src="images/experience-floatingwork.png" alt="Work lounge">
+                        <h3>Floating work salon</h3>
+                        <p>Secure Wi-Fi, screens, and concierge on a chartered yacht for mobile board sessions.</p>
+                        <span>Business</span>
+                    </article>
+                    <article class="experience-card" data-category="culture">
+                        <img src="images/experience-gallerywalk.png" alt="Art walk">
+                        <h3>After-hours gallery walk</h3>
+                        <p>Curator-led tour with champagne and artist meet-and-greets in the design district.</p>
+                        <span>Culture</span>
+                    </article>
+                    <article class="experience-card" data-category="culinary">
+                        <img src="images/experience-microroastery.png" alt="Coffee lab">
+                        <h3>Micro-roastery lab</h3>
+                        <p>Roast your own blend, label it, and ship it to friends with handwritten postcards.</p>
+                        <span>Culinary</span>
+                    </article>
+                    <article class="experience-card" data-category="wellness">
+                        <img src="images/experience-soundbath.png" alt="Sound bath">
+                        <h3>Sound bath bivouac</h3>
+                        <p>Desert-inspired soundscape with crystal bowls, breathwork, and grounding rituals.</p>
+                        <span>Wellness</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="hs_city_guide" id="city-guide">
+            <div class="hs_container">
+                <div class="hs_section_heading">
+                    <p class="hs_subheading">Neighborhood notes</p>
+                    <h3 class="hs_heading">Choose your base, we’ll map the radius</h3>
+                </div>
+                <div class="hs_city_guide_grid">
+                    <article>
+                        <img src="images/city-northpier.png" alt="North Pier boardwalk sunrise">
+                        <h4>North Pier</h4>
+                        <p>Sunrise trails, espresso bars, and design boutiques. Perfect for early risers and creative hunters.</p>
+                        <ul>
+                            <li>Borrow our Leica to capture murals</li>
+                            <li>Complimentary espresso cards</li>
+                            <li>Daily 6AM run clubs</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <img src="images/city-harbordistrict.png" alt="Harbor District cocktail lounge">
+                        <h4>Harbor District</h4>
+                        <p>Where business towers meet speakeasies. Ideal for professionals who mix strategy with style.</p>
+                        <ul>
+                            <li>On-demand town cars</li>
+                            <li>Priority access to members’ lounges</li>
+                            <li>Last-minute printing + courier</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <img src="images/city-serenitycove.png" alt="Serenity Cove garden cafe">
+                        <h4>Serenity Cove</h4>
+                        <p>Wellness-forward zone featuring studios, botanical gardens, and slow food cafes.</p>
+                        <ul>
+                            <li>Complimentary meditation mats</li>
+                            <li>Infrared sauna reservations</li>
+                            <li>Plant-based chef pop-ups</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="hs_section8_wr mt_bgtempconatainer hs_section hs_footer">
+        <div class="hs_container">
+            <div class="hs_section8_flex">
+                <div class="hs_section8_item">
+                    <div class="hs_footer_logo">
+                        <img src="images/Logo-light.png" alt="Harbor Suites logo">
+                    </div>
+                    <p>Connect with us on social media to stay updated on offers, promotions, and curated city experiences.</p>
+                    <ul class="hs_link_social">
+                        <li><a href="https://facebook.com" aria-label="Facebook"><img src="images/fb_icons.png" alt="Facebook icon"></a></li>
+                        <li><a href="https://instagram.com" aria-label="Instagram"><img src="images/ins_icons.png" alt="Instagram icon"></a></li>
+                        <li><a href="https://google.com/maps" aria-label="Google Maps"><img src="images/gog_icons.png" alt="Google icon"></a></li>
+                        <li><a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linke_icons.png" alt="LinkedIn icon"></a></li>
+                    </ul>
+                </div>
+                <div class="hs_section8_item">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#service">Services</a></li>
+                        <li><a href="index.html#blog">Testimonials</a></li>
+                        <li><a href="index.html#faq">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="experiences.html" aria-current="page">Experiences</a></li>
+                        <li><a href="events.html">Events</a></li>                        
+                    </ul>
+                </div>
+                <div class="hs_section8_item">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#city-guide">City Guide</a></li>
+                        <li><a href="events.html#venues">Venues</a></li>
+                        <li><a href="javascript:;">Team</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="hs_section8_item">  
+                    <h3>Contact Info</h3>
+                    <ul class="hs_socialMedia">
+                        <li>
+                            <img src="images/phone-call.png" alt="Phone icon">
+                            <a href="tel:+1234567890">+1 234 567 890</a>
+                        </li>
+                        <li>
+                            <img src="images/email.png" alt="Email icon">
+                            <a href="mailto:hello@harborsuites.com">hello@harborsuites.com</a>
+                        </li>
+                        <li>
+                            <img src="images/clock.png" alt="Clock icon">
+                            <a href="javascript:;">Office Hours: 8 AM – 11 PM (Daily)</a>
+                        </li>     
+                    </ul>                           
+                </div>
+            </div>
+        </div>
+        <div class="hs_section9_wr mt_bgtempconatainer hs_section hs_copyRight">
+              <span>© 2025 Harbor Suites. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
+

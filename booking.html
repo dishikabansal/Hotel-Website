@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Your Stay | Harbor Suites</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page booking-page">
+    <header class="hs-header-wrapper mt_bgtempconatainer">
+        <div class="hs_nav_flex">
+            <div class="hs_logo" aria-label="Harbor Suites">
+                <a href="index.html#home">
+                    <img src="images/Logo-light.png" alt="Harbor Suites logo">
+                </a>
+            </div>
+            <nav class="hs_nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#service">Services</a></li>
+                    <li><a href="index.html#blog">Testimonials</a></li>
+                    <li><a href="index.html#faq">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="booking.html" aria-current="page" class="active">Booking</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+                <div class="hs_btn_nav">
+                    <a href="#reserve" class="hs_btn as-CommonClass-navbar" top-h="70">Reserve Now</a>
+                </div>
+            </nav>
+            <button class="hs_toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <img src="images/menu_toggle.png" alt="Menu icon">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hs_page_hero hs_booking_hero" style="background-image:url('images/room05.jpg');" id="top">
+            <div class="hs_container">
+                <div class="hs_page_hero_content">
+                    <p class="hs_subheading">Personal concierge on every stay</p>
+                    <h1>Book a suite that feels like it was designed for you</h1>
+                    <p>Pick your dates, tailor the details, and we’ll handle the rest—from pre-stocked fridges to boardroom-ready setups.</p>
+                    <div class="hs_hero_stats">
+                        <div>
+                            <span>60+</span>
+                            <p>Designer suites</p>
+                        </div>
+                        <div>
+                            <span>4 hrs</span>
+                            <p>Average response</p>
+                        </div>
+                        <div>
+                            <span>24/7</span>
+                            <p>Concierge hotline</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hs_booking_steps">
+            <div class="hs_container">
+                <div class="hs_section_heading">
+                    <p class="hs_subheading">Three effortless steps</p>
+                    <h2 class="hs_heading">From idea to confirmed stay</h2>
+                </div>
+                <div class="hs_steps_grid">
+                    <article>
+                        <span>01</span>
+                        <h3>Select dates & suite</h3>
+                        <p>Choose flexible dates, room type, and guest count. We’ll live-quote the best available rate.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>Personalize the stay</h3>
+                        <p>Add airport transfers, wellness rituals, pantry stocking, or meeting setups.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Confirm & arrive</h3>
+                        <p>Receive a concierge confirmation with digital keys, itinerary, and live chat details.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="hs_booking_form_section" id="reserve">
+            <div class="hs_container">
+                <div class="hs_booking_layout">
+                    <form class="hs_booking_form" id="booking-form">
+                        <div class="hs_section_heading">
+                            <p class="hs_subheading">Reservation request</p>
+                            <h3 class="hs_heading">Tell us how to prepare your suite</h3>
+                        </div>
+                        <label>
+                            Check-in
+                            <input type="date" id="checkin" required>
+                        </label>
+                        <label>
+                            Check-out
+                            <input type="date" id="checkout" required>
+                        </label>
+                        <label>
+                            Guests
+                            <input type="number" id="guests" min="1" max="6" value="2">
+                        </label>
+                        <label>
+                            Room type
+                            <select id="roomType">
+                                <option value="Harbor King" selected>Harbor King</option>
+                                <option value="Extended Stay Loft">Extended Stay Loft</option>
+                                <option value="Signature Suite">Signature Suite</option>
+                                <option value="Deluxe Twin">Deluxe Twin</option>
+                            </select>
+                        </label>
+                        <label>
+                            Purpose of stay
+                            <select id="stayPurpose">
+                                <option value="Leisure">Leisure</option>
+                                <option value="Business">Business</option>
+                                <option value="Celebration">Celebration</option>
+                                <option value="Wellness">Wellness</option>
+                            </select>
+                        </label>
+                        <label>
+                            Add-ons
+                            <textarea id="addons" rows="3" placeholder="Airport pick-up, pantry stocking, AV setup, etc."></textarea>
+                        </label>
+                        <button type="submit" class="hs_btn">Request Itinerary</button>
+                        <p class="hs_form_status" id="booking-status" role="status" aria-live="polite"></p>
+                    </form>
+                    <aside class="hs_booking_summary" id="booking-summary">
+                        <p class="hs_subheading">Live summary</p>
+                        <h3 id="summary-title">Harbor King · Leisure</h3>
+                        <ul>
+                            <li><span>Dates</span><strong id="summary-dates">Select dates</strong></li>
+                            <li><span>Guests</span><strong id="summary-guests">2 adults</strong></li>
+                            <li><span>Estimated total</span><strong id="summary-total">$540</strong></li>
+                        </ul>
+                        <p class="hs_paragraph" id="summary-note">Tell us about transfers, pantry, or meeting needs and we’ll confirm within 4 business hours.</p>
+                        <div class="hs_summary_badges">
+                            <span>Flexible cancel</span>
+                            <span>Early check-in upon request</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="hs_addons_section">
+            <div class="hs_container">
+                <div class="hs_section_heading">
+                    <p class="hs_subheading">Signature add-ons</p>
+                    <h3 class="hs_heading">Layer experiences onto your stay</h3>
+                </div>
+                <div class="hs_addons_grid">
+                    <article>
+                        <h4>Wellness reset</h4>
+                        <p>Infrared sauna slot, guided breathwork, and recovery mini-bar stocked prior to arrival.</p>
+                    </article>
+                    <article>
+                        <h4>Boardroom bundle</h4>
+                        <p>Private car, dual monitors, secure Wi-Fi key, and chef-led working lunch for up to 8 guests.</p>
+                    </article>
+                    <article>
+                        <h4>Celebration suite</h4>
+                        <p>Floral styling, dessert trolley, Polaroid kits, and late checkout for you and your crew.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="hs_section8_wr mt_bgtempconatainer hs_section hs_footer">
+        <div class="hs_container">
+            <div class="hs_section8_flex">
+                <div class="hs_section8_item">
+                    <div class="hs_footer_logo">
+                        <img src="images/Logo-light.png" alt="Harbor Suites logo">
+                    </div>
+                    <p>Connect with us on social media to stay updated on offers, promotions, and curated city experiences.</p>
+                    <ul class="hs_link_social">
+                        <li><a href="https://facebook.com" aria-label="Facebook"><img src="images/fb_icons.png" alt="Facebook icon"></a></li>
+                        <li><a href="https://instagram.com" aria-label="Instagram"><img src="images/ins_icons.png" alt="Instagram icon"></a></li>
+                        <li><a href="https://google.com/maps" aria-label="Google Maps"><img src="images/gog_icons.png" alt="Google icon"></a></li>
+                        <li><a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/linke_icons.png" alt="LinkedIn icon"></a></li>
+                    </ul>
+                </div>
+                <div class="hs_section8_item">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#service">Services</a></li>
+                        <li><a href="index.html#blog">Testimonials</a></li>
+                        <li><a href="index.html#faq">Gallery</a></li>
+                        <li><a href="booking.html" aria-current="page">Booking</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="events.html">Events</a></li>                        
+                    </ul>
+                </div>
+                <div class="hs_section8_item">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="experiences.html#city-guide">City Guide</a></li>
+                        <li><a href="events.html#venues">Venues</a></li>
+                        <li><a href="javascript:;">Team</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="hs_section8_item">  
+                    <h3>Contact Info</h3>
+                    <ul class="hs_socialMedia">
+                        <li>
+                            <img src="images/phone-call.png" alt="Phone icon">
+                            <a href="tel:+1234567890">+1 234 567 890</a>
+                        </li>
+                        <li>
+                            <img src="images/email.png" alt="Email icon">
+                            <a href="mailto:hello@harborsuites.com">hello@harborsuites.com</a>
+                        </li>
+                        <li>
+                            <img src="images/clock.png" alt="Clock icon">
+                            <a href="javascript:;">Office Hours: 8 AM – 11 PM (Daily)</a>
+                        </li>     
+                    </ul>                           
+                </div>
+            </div>
+        </div>
+        <div class="hs_section9_wr mt_bgtempconatainer hs_section hs_copyRight">
+              <span>© 2025 Harbor Suites. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
