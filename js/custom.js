@@ -35,15 +35,11 @@ Project: Affiliate Marketing html
 	  // sticky header
 	  sticky_header: function () {
 		$(window).scroll(function () {
-		  var wh = window.innerWidth;
-		  {
-			var h = window.innerHeight;
-			var window_top = $(window).scrollTop() + 1;
-			if (window_top > 100) {
-			  $(".pp-header-wrapper").addClass("pp-header-fixed animated fadeInDown");
-			} else {
-			  $(".pp-header-wrapper").removeClass("pp-header-fixed animated fadeInDown");
-			}
+		  var window_top = $(window).scrollTop();
+		  if (window_top > 50) {
+			$(".hs-header-wrapper").addClass("hs-header-fixed");
+		  } else {
+			$(".hs-header-wrapper").removeClass("hs-header-fixed");
 		  }
 		});
 	  },
